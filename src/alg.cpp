@@ -5,6 +5,14 @@
 
 bool checkPrime(uint64_t value) {
 // вставьте код функции
+  if(value==0 && value==1){
+    return false;
+  else
+    for(i=2; i<value; i++)
+      if(value % i == 0)
+        return false;
+  else
+    return true;
 }
 
 uint64_t nPrime(uint64_t n) {
