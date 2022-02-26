@@ -10,9 +10,11 @@ bool checkPrime(uint64_t value) {
     for (int i = 2; i < value; i++) {
       if (value % i == 0) {
         return false;
-      } else 
+      } else {
           return true;
+      }
     }
+    return 0;
   }
 }
 
@@ -21,14 +23,13 @@ uint64_t nPrime(uint64_t n) {
   int k = 1;
   uint64_t value = 2;
   while (k < n) {
-   if (checkPrime(value)) {
-     k++;
-   }
+    if (checkPrime(value)) {
+      k++;
+    }
    value++;
   }
   return value;
 }
-     
 
 uint64_t nextPrime(uint64_t value) {
 // вставьте код функции
