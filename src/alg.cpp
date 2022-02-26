@@ -4,34 +4,31 @@
 
 bool checkPrime(uint64_t value) {
 // вставьте код функции
-  if (value == 0 && value == 1); {
+  if (value == 0 && value == 1) {
     return false;
-  } else if (value != 0 && value != 1); {
-    for (int i = 2; i < value; i++)
-      if (value % i == 0)
+  } else if (value != 0 && value != 1) {
+    for (int i = 2; i < value; i++) {
+      if (value % i == 0) {
         return false;
-  } else {
-    return true;
+      } else 
+          return true;
+    }
   }
-  return;
 }
 
 uint64_t nPrime(uint64_t n) {
 // вставьте код функции
-  int i = 0;
-  while (i<n) {
-    if (value == 0 && value == 1); {
-    return 0;
-  } else if (value != 0 && value != 1); {
-    for (int i = 2; i < value; i++)
-      if (value % i == 0)
-        return 0;
-  } else {
-    return i++;
-  return;
+  int k = 1;
+  uint64_t value = 2;
+  while (k < n) {
+   if (checkPrime(value)) {
+     k++;
+   }
+   value++;
   }
-  return value; 
+  return value;
 }
+     
 
 uint64_t nextPrime(uint64_t value) {
 // вставьте код функции
