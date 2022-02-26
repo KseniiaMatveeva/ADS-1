@@ -20,7 +20,7 @@ bool checkPrime(uint64_t value) {
 
 uint64_t nPrime(uint64_t n) {
 // вставьте код функции
-  int k = 1;
+  int k = 0;
   uint64_t value = 2;
   while (k < n) {
     if (checkPrime(value)) {
@@ -33,7 +33,7 @@ uint64_t nPrime(uint64_t n) {
 
 uint64_t nextPrime(uint64_t value) {
 // вставьте код функции
-  uint64_t value2 = value++;
+  uint64_t value2 = value + 1;
   while (checkPrime(value2) == false) {
     value2++;
   }
