@@ -35,7 +35,7 @@ uint64_t nextPrime(uint64_t value) {
 // вставьте код функции
   uint64_t value2 = value + 1;
   while (checkPrime(value2) == false) {
-    value2++;
+    value2 = value2 + 1;
   }
   return value2;
 }
@@ -47,8 +47,11 @@ uint64_t sumPrime(uint64_t hbound) {
   while (value < hbound) {
     if (checkPrime(value)) {
       sum = sum + value;
+      value = value + 1;
     }
-    value++;
+    else {
+      value = value + 1;
+    }
   }
   return sum;
 }
