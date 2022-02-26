@@ -2,6 +2,7 @@
 #include <cstdint>
 #include "alg.h"
 
+
 bool checkPrime(uint64_t value) {
 // вставьте код функции
   if (value == 0 && value == 1) {
