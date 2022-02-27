@@ -22,23 +22,29 @@ bool checkPrime(uint64_t value) {
 uint64_t nPrime(uint64_t n) {
 // вставьте код функции
   int k = 1;
-  uint64_t value = 2;
-  while (k < n) {
-    if (checkPrime(value)) {
-      k = k + 1;
+  uint64_t value = 0;
+  while (k <= n) {
+    if (k = n ) {
+      return 2;
+    } else {
+      if (checkPrime(value)) {
+        k++;
+        value++;
+      } else {
+        value++;
+      }
     }
-    value = value + 1;
   }
   return value;
 }
 
 uint64_t nextPrime(uint64_t value) {
 // вставьте код функции
- // uint64_t value2 = value + 1;
-  while (checkPrime(value + 1) == false) {
-    value = value + 1;
+  uint64_t value2 = value + 1;
+  while (checkPrime(value2) == false) {
+    value2 = value2 + 1;
   }
-  return value;
+  return value2;
 }
 
 uint64_t sumPrime(uint64_t hbound) {
