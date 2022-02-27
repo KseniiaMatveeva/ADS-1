@@ -21,12 +21,10 @@ bool checkPrime(uint64_t value) {
 
 uint64_t nPrime(uint64_t n) {
 // вставьте код функции
-  int k = 1;
+  int k = 0;
   uint64_t value = 0;
   while (k <= n) {
-    if (n = 1) {
-      return 2;
-    } else if (k < n) {
+    if (k < n) {
       if (checkPrime(value)) {
         k++;
         value++;
