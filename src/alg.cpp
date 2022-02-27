@@ -40,7 +40,6 @@ uint64_t nextPrime(uint64_t value) {
   while (1) {
     if (checkPrime(value)) {
       return value;
-      break;
     } else {
       value++;
     }
