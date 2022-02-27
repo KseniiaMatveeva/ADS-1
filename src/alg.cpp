@@ -32,9 +32,9 @@ uint64_t nPrime(uint64_t n) {
         value++;
       } else {
         value++;
-      } else if (k = n) {
+      } 
+    } else if (k = n) {
         return value;
-      }
     }
   }
   return value;
