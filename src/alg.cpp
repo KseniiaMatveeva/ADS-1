@@ -1,6 +1,6 @@
 // Copyright 2022 NNTU-CS
 #include <cstdint>
-#includ <cmath>
+#include <cmath>
 #include "alg.h"
 
 
