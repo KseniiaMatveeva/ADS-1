@@ -37,9 +37,12 @@ uint64_t nPrime(uint64_t n) {
 uint64_t nextPrime(uint64_t value) {
 // вставьте код функции
   value++;
-  for (uint64_t i = value; ; i++) {
-    if (checkPrime(i)) {
-      return i;
+  while (1) {
+    if (checkPrime(value)) {
+      return value;
+      break;
+    } else {
+      value++;
     }
   }
   return value;
