@@ -51,14 +51,14 @@ uint64_t sumPrime(uint64_t hbound) {
 // вставьте код функции
   uint64_t sum = 0;
   uint64_t value = 0;
-  uint64_t value2 = 0;
-  while (value < hbound) {
-    if (checkPrime(value + value2)) {
-      sum = sum + value + value2;
-      value2++;
+  if (value < hbound) {
+    if (checkPrime(value)) {
+      sum = sum + value;
+      value++;
     } else {
-      value2++;
+      value++;
     }
   }
   return sum;
 }
+      
