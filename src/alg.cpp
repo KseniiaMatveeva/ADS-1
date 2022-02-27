@@ -23,14 +23,12 @@ uint64_t nPrime(uint64_t n) {
 // вставьте код функции
   int k = 0;
   uint64_t value = 1;
-  while (k <= n) {
+  while (k < n) {
     value++;
     if (k < n) {
       if (checkPrime(value)) {
         k++;
       }
-    } else if (k = n) {
-        return value;
     }
   }
   return value;
@@ -50,6 +48,7 @@ uint64_t sumPrime(uint64_t hbound) {
   uint64_t sum = 0;
   uint64_t value = 0;
   if (value < hbound) {
+    value++;
     if (checkPrime(value)) {
       sum = sum + value;
       value++;
@@ -59,4 +58,3 @@ uint64_t sumPrime(uint64_t hbound) {
   }
   return sum;
 }
-      
